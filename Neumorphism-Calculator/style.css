@@ -1,0 +1,105 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background: var(--greyLight-1);
+}
+
+.display {
+  width: 100vw;
+  height: 30vh;
+  padding: 5%;
+  position: relative;
+}
+
+.card {
+  height: 100%;
+  width: 90%;
+  /* background: var(--white); */
+  border-radius: 1rem;
+  box-shadow: .3rem .3rem .6rem var(--greyLight-2),
+    -.2rem -.2rem .5rem var(--white);
+  color: var(--primary);
+}
+
+.card-color {
+  position: absolute;
+  border-radius: 1rem;
+  top: 10%;
+  left: 6%;
+  height: 73%;
+  width: 75%;
+  padding: 0.5rem;
+  box-shadow: inset .2rem .2rem .5rem var(--greyLight-2),
+    inset -.2rem -.2rem .5rem var(--white);
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.operator {
+  display: flex;
+  flex-wrap: wrap;
+  height: 60vh;
+}
+
+.opeartor-button {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: none;
+  background: var(--white);
+  border-radius: 50%; */
+}
+
+.opeartor-button div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  /* background: var(--white); */
+  border-radius: 50%;
+  color: var(--greyDark);
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: .3rem .3rem .6rem var(--greyLight-2),
+    -.2rem -.2rem .5rem var(--white);
+  transition: all 0.5s ease;
+}
+
+.opeartor-button div:active {
+  box-shadow: inset .2rem .2rem .5rem var(--greyLight-2),
+    inset -.2rem -.2rem .5rem var(--white);
+  color: var(--primary);
+}
+
+.opeartor-button div:hover {
+  color: var(--primary);
+}
+
+/* .opeartor-button button:focus {
+  outline: 0;
+} */
